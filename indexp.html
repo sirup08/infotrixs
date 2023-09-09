@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header><style>The Vibe music</style>
+    <title>The Vibe music Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add mobile-specific styles here */
+        @media (max-width: 768px) {
+            .content {
+                text-align: center;
+            }
+            .textbox {
+                padding: 20px;
+            }
+            .imgbox img {
+                width: 100%;
+                max-width: 300px;
+                margin: 20px auto;
+            }
+            .thumb {
+                display: flex;
+                justify-content: center;
+            }
+            .sci {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <style>
+        body{background-image: url(mbg.jpg);}
+    </style>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png" alt="Starbucks logo"></a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>The Vibe Music<br><span></span></h2>
+                <p>
+                </p>
+                <a href="#">Download now</a>
+            </div>
+            <div class="imgbox">
+                <img src="logo.jpg.png" class="starbucks" alt="Starbucks Image">
+        
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="hd.jpg" onclick="imgslider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="4p.jpg" onclick="imgslider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="3p.jpg" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="pl1.jpg" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="PL2.jpg" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="ai.jpg" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="ipo.jpg" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+       
+    </section>
+
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>Free music access </h3>
+            <p>Go live and also download the music 
+                Go non stop listening</p>
+        </div>
+        <div class="feature">
+            <h3>Millions of playlists and podcasts</h3>
+            <p>Millions of songs, music, EDMs, and podcasts at one place
+                Ai created playlists for the vibe.
+            </p>
+        </div>
+        <div class="feature">
+            <h3>Music Identifier</h3>
+            <p>Music identification helps in finding music near you</p>
+        </div>
+    </section>
+    <ul class="sci">
+        <li><a href="#"><img src="fb.png" width="50" height="50" alt="Facebook"></a></li>
+        <li><a href="#"><img src="twt.png" width="50" height="50" alt="Twitter"></a></li>
+        <li><a href="#"><img src="ins.png" width="50" height="50" alt="LinkedIn"></a></li>
+        <li><a href="#"><img src="wts,png.png" width="50" height="50" alt="LinkedIn"></a></li>
+    </ul>
+</body>
+</html>
